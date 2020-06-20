@@ -393,6 +393,8 @@ def main():
     # Perform inference on the input stream
     if args.model == 'faster/frozen_inference_graph.xml':
         infer_on_stream(args, m_client)
+    elif args.model == 'faster2/frozen_inference_graph.xml':
+        infer_on_stream(args, m_client)
     elif args.model == 'ssd/frozen_inference_graph.xml':
         infer_on_stream_ssd(args, m_client)
     
